@@ -5,6 +5,6 @@ do
     echo "sleeping"
     git commit -a -m "update"
     git push
-	sleep 60
+	sleep $SLEEP_SECONDS
 done
 
