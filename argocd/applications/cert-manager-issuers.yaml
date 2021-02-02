@@ -11,7 +11,7 @@
   "source":
     "path": "argocd/applications/issuers"
     "repoURL": "https://github.com/karlschriek/kubeflow-argocd"
-    "targetRevision": "master"
+    "targetRevision": "863518836478/dev-sak-120-116-10.learn-mlops.com"
   "syncPolicy":
     "automated":
       "prune": true
