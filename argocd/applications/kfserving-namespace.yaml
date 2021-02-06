@@ -3,5 +3,5 @@
 "metadata":
   "labels":
     "control-plane": "kubeflow"
-    "istio-injection": "enabled"
-  "name": "kubeflow"
+    "istio-injection": "disabled"
+  "name": "kfserving"
