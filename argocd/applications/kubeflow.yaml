@@ -10,8 +10,8 @@
   "project": "default"
   "source":
     "path": "argocd/applications/kfdefs"
-    "repoURL": "https://github.com/karlschriek/kubeflow-argocd"
-    "targetRevision": "master"
+    "repoURL": "https://github.com/at-gmbh/kubeflow-argocd"
+    "targetRevision": "863518836478/dev-16-learn-mlops.com"
   "syncPolicy":
     "automated":
       "prune": true
