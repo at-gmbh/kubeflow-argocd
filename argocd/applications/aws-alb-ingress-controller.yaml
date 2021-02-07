@@ -13,11 +13,11 @@
     "helm":
       "parameters":
       - "name": "rbac.serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
-        "value": "arn:aws:iam::863518836478:role/dev-sak-120-116-9_aws-alb-ingress-controller"
+        "value": "arn:aws:iam::863518836478:role/dev-17_aws-alb-ingress-controller"
       - "name": "clusterName"
-        "value": "dev-sak-120-116-9"
+        "value": "dev-17"
       - "name": "awsVpcID"
-        "value": "vpc-08098a02446c283f9"
+        "value": "vpc-0cfec1e08186403ff"
       - "name": "awsRegion"
         "value": "eu-central-1"
       - "name": "resources.limits.cpu"
