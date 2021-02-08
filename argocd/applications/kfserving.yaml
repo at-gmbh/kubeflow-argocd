@@ -1,23 +1,20 @@
 "apiVersion": "argoproj.io/v1alpha1"
 "kind": "Application"
 "metadata":
-  "name": "kubeflow-operator"
+  "name": "kfserving"
   "namespace": "argocd"
 "spec":
   "destination":
-    "namespace": "operators"
+    "namespace": "kfserving"
     "server": "https://kubernetes.default.svc"
   "project": "default"
   "source":
-    "kustomize":
-      "images":
-      - "aipipeline/kubeflow-operator:v1.2.0"
-    "path": "deploy"
-    "repoURL": "https://github.com/kubeflow/kfctl"
-    "targetRevision": "v1.2-branch"
+    "path": "argocd/applications/kfserving-defs"
+    "repoURL": "https://github.com/at-gmbh/kubeflow-argocd"
+    "targetRevision": "863518836478/dev-18-learn-mlops.com"
   "syncPolicy":
     "automated":
       "prune": true
       "selfHeal": true
     "syncOptions":
-    - "CreateNamespace=true"
+    - "CreateNamespace=false"

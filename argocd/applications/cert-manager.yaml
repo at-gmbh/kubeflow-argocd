@@ -15,11 +15,11 @@
       - "name": "installCRDs"
         "value": "true"
       - "name": "rbac.serviceAccountAnnotations.eks\\.amazonaws\\.com/role-arn"
-        "value": "arn:aws:iam::863518836478:role/dev-sak-120-116-9_cert-manager"
+        "value": "arn:aws:iam::863518836478:role/dev-18_cert-manager"
       - "name": "aws.region"
         "value": "eu-central-1"
       - "name": "domainFilters[0]"
-        "value": "dev-sak-120-116-9.learn-mlops.com"
+        "value": "dev-18.learn-mlops.com"
     "repoURL": "https://charts.jetstack.io"
     "targetRevision": "v0.15.1"
   "syncPolicy":

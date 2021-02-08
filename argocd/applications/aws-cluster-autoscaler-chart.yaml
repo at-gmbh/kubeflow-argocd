@@ -13,7 +13,7 @@
     "helm":
       "parameters":
       - "name": "rbac.serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
-        "value": "arn:aws:iam::863518836478:role/dev-sak-120-116-9_cluster-autoscaler"
+        "value": "arn:aws:iam::863518836478:role/dev-18_cluster-autoscaler"
       - "name": "cloudProvider"
         "value": "aws"
       - "name": "image.repository"
@@ -21,7 +21,7 @@
       - "name": "image.tag"
         "value": "v1.15.7"
       - "name": "autoDiscovery.clusterName"
-        "value": "dev-sak-120-116-9"
+        "value": "dev-18"
       - "name": "autoDiscovery.enabled"
         "value": "true"
       - "name": "awsRegion"
