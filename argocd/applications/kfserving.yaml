@@ -1,15 +1,15 @@
 "apiVersion": "argoproj.io/v1alpha1"
 "kind": "Application"
 "metadata":
-  "name": "kubeflow"
+  "name": "kfserving"
   "namespace": "argocd"
 "spec":
   "destination":
-    "namespace": "kubeflow"
+    "namespace": "kfserving"
     "server": "https://kubernetes.default.svc"
   "project": "default"
   "source":
-    "path": "argocd/applications/kfdefs"
+    "path": "argocd/applications/kfserving-defs"
     "repoURL": "https://github.com/at-gmbh/kubeflow-argocd"
     "targetRevision": "863518836478/dev-22-learn-mlops.com"
   "syncPolicy":
