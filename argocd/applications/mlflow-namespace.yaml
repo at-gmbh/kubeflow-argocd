@@ -4,4 +4,4 @@
   "labels":
     "control-plane": "kubeflow"
     "istio-injection": "enabled"
-  "name": "kubeflow"
+  "name": "mlflow"

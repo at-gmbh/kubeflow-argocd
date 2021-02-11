@@ -2,9 +2,9 @@
 "kind": "Ingress"
 "metadata":
   "annotations":
-    "alb.ingress.kubernetes.io/auth-idp-cognito": "{\"UserPoolArn\":\"arn:aws:cognito-idp:eu-central-1:863518836478:userpool/eu-central-1_pk6NSpI7w\",\"UserPoolClientId\":\"2r03lv7d56li4ffo1152horl5n\",\"UserPoolDomain\":\"auth.dev-sak-120-116-9.learn-mlops.com\"}"
+    "alb.ingress.kubernetes.io/auth-idp-cognito": "{\"UserPoolArn\":\"arn:aws:cognito-idp:eu-central-1:863518836478:userpool/eu-central-1_cz5h0TE3H\",\"UserPoolClientId\":\"2vaqedgobacfa3jt7rsahsc0gv\",\"UserPoolDomain\":\"auth.dev-25.learn-mlops.com\"}"
     "alb.ingress.kubernetes.io/auth-type": "cognito"
-    "alb.ingress.kubernetes.io/certificate-arn": "arn:aws:acm:eu-central-1:863518836478:certificate/49c8315e-fd09-4716-9e19-096749d62b5f"
+    "alb.ingress.kubernetes.io/certificate-arn": "arn:aws:acm:eu-central-1:863518836478:certificate/5a04b691-6e03-416b-b7a7-920e8dbdc92e"
     "alb.ingress.kubernetes.io/listen-ports": "[{\"HTTPS\":443}]"
     "alb.ingress.kubernetes.io/scheme": "internet-facing"
     "kubernetes.io/ingress.class": "alb"
@@ -14,7 +14,7 @@
   "namespace": "istio-system"
 "spec":
   "rules":
-  - "host": "kubeflow.dev-sak-120-116-9.learn-mlops.com"
+  - "host": "kubeflow.dev-25.learn-mlops.com"
     "http":
       "paths":
       - "backend":
@@ -23,5 +23,5 @@
         "path": "/*"
   "tls":
   - "hosts":
-    - "kubeflow.dev-sak-120-116-9.learn-mlops.com"
+    - "kubeflow.dev-25.learn-mlops.com"
     "secretName": "kubeflow-tls-certs"
