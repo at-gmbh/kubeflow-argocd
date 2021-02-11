@@ -30,21 +30,6 @@ spec:
           name: manifests
           path: application/v3
       name: application
-    # - kustomizeConfig:
-    #     repoRef:
-    #       name: manifests
-    #       path: stacks/aws/application/cert-manager-crds
-    #   name: cert-manager-crds
-    # - kustomizeConfig:
-    #     repoRef:
-    #       name: manifests
-    #       path: stacks/aws/application/cert-manager-kube-system-resources
-    #   name: cert-manager-kube-system-resources
-    # - kustomizeConfig:
-    #     repoRef:
-    #       name: manifests
-    #       path: stacks/aws/application/cert-manager
-    #   name: cert-manager
     - kustomizeConfig:
         repoRef:
           name: manifests
@@ -65,11 +50,6 @@ spec:
           name: manifests
           path: knative/installs/generic
       name: knative
-    # - kustomizeConfig:
-    #     repoRef:
-    #       name: manifests
-    #       path: kfserving-0-3-0
-    #   name: kfserving
     - kustomizeConfig:
         repoRef:
           name: manifests
