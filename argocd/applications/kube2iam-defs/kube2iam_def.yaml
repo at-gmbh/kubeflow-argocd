@@ -1,3 +1,34 @@
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kube2iam
+  namespace: kube-system
+---
+apiVersion: v1
+items:
+  - apiVersion: rbac.authorization.k8s.io/v1
+    kind: ClusterRole
+    metadata:
+      name: kube2iam
+    rules:
+      - apiGroups: [""]
+        resources: ["namespaces","pods"]
+        verbs: ["get","watch","list"]
+  - apiVersion: rbac.authorization.k8s.io/v1
+    kind: ClusterRoleBinding
+    metadata:
+      name: kube2iam
+    subjects:
+    - kind: ServiceAccount
+      name: kube2iam
+      namespace: kube-system
+    roleRef:
+      kind: ClusterRole
+      name: kube2iam
+      apiGroup: rbac.authorization.k8s.io
+kind: List
+---
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
@@ -13,12 +44,15 @@ spec:
       labels:
         name: kube2iam
     spec:
+      serviceAccountName: kube2iam
       hostNetwork: true
       containers:
         - image: jtblin/kube2iam:latest
           name: kube2iam
           args:
             - "--base-role-arn=arn:aws:iam::863518836478:role/kubernetes-role"
+            - "--iptables=true"
+            - "--host-ip=$(HOST_IP)"
             - "--node=$(NODE_NAME)"
           env:
             - name: NODE_NAME
@@ -29,3 +63,5 @@ spec:
             - containerPort: 8181
               hostPort: 8181
               name: http
+          securityContext:
+            privileged: true
