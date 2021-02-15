@@ -37,7 +37,7 @@
       - "name": "server.service.type"
         "value": "NodePort"
       - "name": "configs.secret.argocdServerAdminPassword"
-        "value": "$2a$10$NQqslra2ayYJMU4zgpW20e84DxVP05ebyZfLm4OkO4emEr6NG.jxq"
+        "value": "$2a$10$rKTnoaI1SkeHD4.oLAtqyurAL1oNyzxYp5Z6UuwdbNS4rfajVPZMq"
       - "name": "server.ingress.enabled"
         "value": "true"
       - "name": "server.config.url"
