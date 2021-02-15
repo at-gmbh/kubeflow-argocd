@@ -2,6 +2,7 @@
 "kind": "Namespace"
 "metadata":
   "labels":
-    "control-plane": "kubeflow"
+    "control-plane": "kfserving-controller-manager"
+    "controller-tools.k8s.io": "1.0"
     "istio-injection": "disabled"
   "name": "kfserving"
