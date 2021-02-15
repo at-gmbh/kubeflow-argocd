@@ -1,0 +1,8 @@
+apiVersion: kubeflow.org/v1
+kind: Profile
+metadata:
+  name: karl-schriek
+spec:
+  owner:
+    kind: User
+    name: karl.schriek@alexanderthamm.com
