@@ -72,5 +72,5 @@ spec:
       name: aws-istio-authz-adaptor
   repos:
     - name: manifests
-      uri: 'https://github.com/at-gmbh/manifests/archive/v1.2.0-at-0.3.tar.gz'
-  version: v1.2-branch-at-0.3
+      uri: 'https://github.com/at-gmbh/manifests/archive/v1.2.0-at-0.2.tar.gz'
+  version: v1.2-branch-at-0.2
