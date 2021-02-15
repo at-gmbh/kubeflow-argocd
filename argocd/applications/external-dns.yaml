@@ -12,14 +12,24 @@
     "chart": "external-dns"
     "helm":
       "parameters":
-      - "name": "serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
-        "value": "arn:aws:iam::863518836478:role/dev-31_external-dns"
       - "name": "aws.region"
         "value": "eu-central-1"
       - "name": "domainFilters[0]"
         "value": "dev-31.learn-mlops.com"
+      - "name": "rbac.create"
+        "value": "true"
+      - "name": "resources.limits.cpu"
+        "value": "100m"
+      - "name": "resources.limits.memory"
+        "value": "300Mi"
+      - "name": "resources.requests.cpu"
+        "value": "100m"
+      - "name": "resources.requests.memory"
+        "value": "300Mi"
+      - "name": "serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
+        "value": "arn:aws:iam::863518836478:role/dev-31_external-dns"
     "repoURL": "https://charts.bitnami.com/bitnami"
-    "targetRevision": "3.4.0"
+    "targetRevision": "3.4.1"
   "syncPolicy":
     "automated":
       "prune": true
