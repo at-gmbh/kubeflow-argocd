@@ -11,7 +11,7 @@
   "source":
     "path": "argocd/applications/kfdefs"
     "repoURL": "https://github.com/at-gmbh/kubeflow-argocd"
-    "targetRevision": "863518836478/dev-covestro-master.learn-mlops.com"
+    "targetRevision": "863518836478/dev-kaas-11.learn-mlops.com"
   "syncPolicy":
     "automated":
       "prune": true
