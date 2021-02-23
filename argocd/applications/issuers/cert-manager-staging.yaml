@@ -11,5 +11,5 @@
     "solvers":
     - "dns01":
         "route53":
-          "hostedZoneID": "Z0088575DTQ2C0P3XNPQ"
+          "hostedZoneID": "Z0932401UXA1Y6EX82DD"
           "region": "eu-central-1"

@@ -13,11 +13,11 @@
     "helm":
       "parameters":
       - "name": "rbac.serviceAccount.annotations.eks\\.amazonaws\\.com/role-arn"
-        "value": "arn:aws:iam::863518836478:role/dev-covestro-master_aws-alb-ingress-controller"
+        "value": "arn:aws:iam::863518836478:role/dev-covestro-master3_aws-alb-ingress-controller"
       - "name": "clusterName"
-        "value": "dev-covestro-master"
+        "value": "dev-covestro-master3"
       - "name": "awsVpcID"
-        "value": "vpc-0e1dbdcebfc8dc87a"
+        "value": "vpc-0a938cf6747e8d3bc"
       - "name": "awsRegion"
         "value": "eu-central-1"
       - "name": "resources.limits.cpu"
