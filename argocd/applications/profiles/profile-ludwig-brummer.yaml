@@ -1,0 +1,8 @@
+apiVersion: kubeflow.org/v1
+kind: Profile
+metadata:
+  name: ludwig-brummer
+spec:
+  owner:
+    kind: User
+    name: ludwig.brummer@alexanderthamm.com
